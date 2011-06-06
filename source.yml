@@ -1,0 +1,22 @@
+name: rock.tutorials
+
+# Use GITORIOUS_ROOT and GITORIOUS_PUSH_ROOT for the packages that are on
+# Gitorious
+#
+# Use SPACEGIT_ROOT and SPACEGIT_PUSH_ROOT for the packages that are on spacegit
+
+imports:
+    - type: git
+      url: $GITORIOUS_ROOT/rock/package_set.git
+      push_to: $GITORIOUS_PUSH_ROOT/rock/package_set.git
+
+version_control:
+    - tutorials/.*:
+        type: git
+        url: $GITORIOUS_ROOT/rock-tutorials/$PACKAGE_BASENAME.git
+        push_to: $GITORIOUS_PUSH_ROOT/rock-tutorials/$PACKAGE_BASENAME.git
+
+    - tutorials/orogen/.*:
+        type: git
+        url: $GITORIOUS_ROOT/rock-tutorials/orogen-$PACKAGE_BASENAME.git
+        push_to: $GITORIOUS_PUSH_ROOT/rock-tutorials/orogen-$PACKAGE_BASENAME.git
