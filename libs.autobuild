@@ -1,1 +1,2 @@
 cmake_package 'tutorials/rock_tutorial'
+cmake_package 'basics_tutorial/message_driver'

@@ -1,5 +1,7 @@
 if package_enabled?('orogen')
     orogen_package 'tutorials/orogen/rock_tutorial'
+    orogen_package 'basics_tutorial/orogen/message_producer'
+    orogen_package 'basics_tutorial/orogen/message_consumer'
 else
     Autoproj.warn "the rock.toolchain package set is not enabled, skipping the oroGen packages"
 end

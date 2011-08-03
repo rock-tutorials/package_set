@@ -11,12 +11,12 @@ imports:
       push_to: $GITORIOUS_PUSH_ROOT/rock/package_set.git
 
 version_control:
-    - tutorials/.*:
+    - .*/.*:
         type: git
         url: $GITORIOUS_ROOT/rock-tutorials/$PACKAGE_BASENAME.git
         push_to: $GITORIOUS_PUSH_ROOT/rock-tutorials/$PACKAGE_BASENAME.git
 
-    - tutorials/orogen/.*:
+    - .*/orogen/.*:
         type: git
         url: $GITORIOUS_ROOT/rock-tutorials/orogen-$PACKAGE_BASENAME.git
         push_to: $GITORIOUS_PUSH_ROOT/rock-tutorials/orogen-$PACKAGE_BASENAME.git
