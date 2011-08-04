@@ -1,2 +1,3 @@
 cmake_package 'tutorials/rock_tutorial'
+cmake_package 'tutorials/vizkit3d_plugin_tutorial'
 cmake_package 'basics_tutorial/message_driver'
