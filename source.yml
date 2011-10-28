@@ -15,8 +15,10 @@ version_control:
         type: git
         url: $GITORIOUS_ROOT/rock-tutorials/$PACKAGE_BASENAME.git
         push_to: $GITORIOUS_PUSH_ROOT/rock-tutorials/$PACKAGE_BASENAME.git
+        branch: $ROCK_FLAVOR
 
     - .*/orogen/.*:
         type: git
         url: $GITORIOUS_ROOT/rock-tutorials/orogen-$PACKAGE_BASENAME.git
         push_to: $GITORIOUS_PUSH_ROOT/rock-tutorials/orogen-$PACKAGE_BASENAME.git
+        branch: $ROCK_FLAVOR
