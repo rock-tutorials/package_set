@@ -5,9 +5,11 @@ if package_enabled?('orogen')
         orogen_package 'basics_tutorial/orogen/message_consumer'
     end
 
-    orogen_package 'tutorials/orogen/tut_follower'
-    orogen_package 'tutorials/orogen/tut_brownian'
-    orogen_package 'tutorials/orogen/tut_deployment'
+    in_flavor 'master', 'next' do
+        orogen_package 'tutorials/orogen/tut_follower'
+        orogen_package 'tutorials/orogen/tut_brownian'
+        orogen_package 'tutorials/orogen/tut_deployment'
+    end
 else
     Autoproj.warn "the rock.toolchain package set is not enabled, skipping the oroGen packages"
 end
