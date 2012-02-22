@@ -3,9 +3,6 @@ if package_enabled?('orogen')
         orogen_package 'tutorials/orogen/rock_tutorial'
         orogen_package 'basics_tutorial/orogen/message_producer'
         orogen_package 'basics_tutorial/orogen/message_consumer'
-    end
-
-    in_flavor 'master', 'next' do
         orogen_package 'tutorials/orogen/tut_follower'
         orogen_package 'tutorials/orogen/tut_brownian'
         orogen_package 'tutorials/orogen/tut_deployment'
