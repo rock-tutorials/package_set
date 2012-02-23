@@ -8,7 +8,9 @@ if package_enabled?('orogen')
         orogen_package 'tutorials/orogen/tut_deployment'
     end
 
-    orogen_package 'tutorials/orogen/tut_sensor'
+    in_flavor 'master', 'next' do
+        orogen_package 'tutorials/orogen/tut_sensor'
+    end
 else
     Autoproj.warn "the rock.toolchain package set is not enabled, skipping the oroGen packages"
 end
