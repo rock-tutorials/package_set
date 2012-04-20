@@ -1,7 +1,7 @@
 in_flavor 'master', 'next', 'stable' do
     cmake_package 'tutorials/rock_tutorial'
     cmake_package 'tutorials/vizkit3d_plugin_tutorial'
-    cmake_package 'basics_tutorial/message_driver'
+    cmake_package 'tutorials/message_driver'
 end
 
 in_flavor 'master' do

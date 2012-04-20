@@ -1,8 +1,8 @@
 if package_enabled?('orogen')
     in_flavor 'master', 'next', 'stable' do
         orogen_package 'tutorials/orogen/rock_tutorial'
-        orogen_package 'basics_tutorial/orogen/message_producer'
-        orogen_package 'basics_tutorial/orogen/message_consumer'
+        orogen_package 'tutorials/orogen/message_producer'
+        orogen_package 'tutorials/orogen/message_consumer'
         orogen_package 'tutorials/orogen/tut_follower'
         orogen_package 'tutorials/orogen/tut_brownian'
         orogen_package 'tutorials/orogen/tut_deployment'
