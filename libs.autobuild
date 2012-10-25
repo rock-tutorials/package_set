@@ -1,4 +1,5 @@
 in_flavor 'master' do
+    bundle_package 'bundles/tutorials'
 end
 
 in_flavor 'master', 'next' do
