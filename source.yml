@@ -6,22 +6,15 @@ name: rock.tutorials
 # Use SPACEGIT_ROOT and SPACEGIT_PUSH_ROOT for the packages that are on spacegit
 
 imports:
-    - type: git
-      url: $GITORIOUS_ROOT/rock/package_set.git
-      push_to: $GITORIOUS_PUSH_ROOT/rock/package_set.git
-    - type: git
-      url: $GITORIOUS_ROOT/rock-toolchain/package_set.git
-      push_to: $GITORIOUS_PUSH_ROOT/rock-toolchain/package_set.git
+    - gitorious: rock/package_set
+    - gitorious: rock-toolchain/package_set
 
 version_control:
     - .*/.*:
-        type: git
-        url: $GITORIOUS_ROOT/rock-tutorials/$PACKAGE_BASENAME.git
-        push_to: $GITORIOUS_PUSH_ROOT/rock-tutorials/$PACKAGE_BASENAME.git
+        gitorious: rock-tutorials/$PACKAGE_BASENAME
         branch: $ROCK_FLAVOR
 
     - .*/orogen/.*:
-        type: git
-        url: $GITORIOUS_ROOT/rock-tutorials/orogen-$PACKAGE_BASENAME.git
-        push_to: $GITORIOUS_PUSH_ROOT/rock-tutorials/orogen-$PACKAGE_BASENAME.git
+        gitorious: rock-tutorials/orogen-$PACKAGE_BASENAME
+        branch: $ROCK_FLAVOR
         branch: $ROCK_FLAVOR
