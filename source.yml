@@ -18,6 +18,6 @@ version_control:
         gitorious: rock-tutorials/orogen-$PACKAGE_BASENAME
         branch: $ROCK_FLAVOR
 
-    - bundles/tutorials:
-        gitorious: rock-tutorials/bundles-tutorials
+    - bundles/.*:
+        gitorious: rock-bundles/$PACKAGE_BASENAME
         branch: $ROCK_FLAVOR

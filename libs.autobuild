@@ -3,6 +3,7 @@ end
 
 in_flavor 'master', 'next' do
     bundle_package 'bundles/tutorials'
+    bundle_package 'bundles/tutorials_scripts'
 end
 
 in_flavor 'master', 'next', 'stable' do
