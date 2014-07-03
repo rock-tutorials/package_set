@@ -1,13 +1,7 @@
 name: rock.tutorials
 
-# Use GITORIOUS_ROOT and GITORIOUS_PUSH_ROOT for the packages that are on
-# Gitorious
-#
-# Use SPACEGIT_ROOT and SPACEGIT_PUSH_ROOT for the packages that are on spacegit
-
 imports:
-    - gitorious: rock/package_set
-    - gitorious: rock-toolchain/package_set
+    - github: rock-core/rock-package_set
 
 version_control:
     - .*/.*:
