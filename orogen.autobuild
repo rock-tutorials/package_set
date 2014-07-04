@@ -1,23 +1,15 @@
-if package_enabled?('orogen')
-    in_flavor 'master' do
-    end
-
-    in_flavor 'master', 'next' do
-    end
-
-    in_flavor 'master', 'next', 'stable' do
-        orogen_package 'tutorials/orogen/tut_follower'
-        orogen_package 'tutorials/orogen/tut_brownian'
-        orogen_package 'tutorials/orogen/tut_deployment'
-        orogen_package 'tutorials/orogen/rock_tutorial'
-        orogen_package 'tutorials/orogen/tut_sensor'
-        orogen_package 'tutorials/orogen/message_producer'
-        orogen_package 'tutorials/orogen/message_consumer'
-    end
-else
-    Autoproj.warn "the rock.toolchain package set is not enabled, skipping the oroGen packages!\n\t\
-If you think oroGen should be enabled, then check your manifest: rock.toolchain package set \
-has to be included before the rock package set"
+in_flavor 'master' do
 end
 
+in_flavor 'master', 'next' do
+end
 
+in_flavor 'master', 'next', 'stable' do
+    orogen_package 'tutorials/orogen/tut_follower'
+    orogen_package 'tutorials/orogen/tut_brownian'
+    orogen_package 'tutorials/orogen/tut_deployment'
+    orogen_package 'tutorials/orogen/rock_tutorial'
+    orogen_package 'tutorials/orogen/tut_sensor'
+    orogen_package 'tutorials/orogen/message_producer'
+    orogen_package 'tutorials/orogen/message_consumer'
+end
