@@ -1,10 +1,4 @@
-in_flavor 'master' do
-end
-
-in_flavor 'master', 'next' do
-end
-
-in_flavor 'master', 'next', 'stable' do
+in_flavor 'rock1408_rc1' do
     orogen_package 'tutorials/orogen/tut_follower'
     orogen_package 'tutorials/orogen/tut_brownian'
     orogen_package 'tutorials/orogen/tut_deployment'
