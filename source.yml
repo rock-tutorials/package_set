@@ -5,11 +5,11 @@ imports:
 
 version_control:
     - .*/.*:
-        gitorious: rock-tutorials/$PACKAGE_BASENAME
+        github: rock-tutorials/tutorials-$PACKAGE_BASENAME
         branch: $ROCK_FLAVOR
 
     - .*/orogen/.*:
-        gitorious: rock-tutorials/orogen-$PACKAGE_BASENAME
+        github: rock-tutorials/tutorials-orogen-$PACKAGE_BASENAME
         branch: $ROCK_FLAVOR
 
     - bundles/.*:
