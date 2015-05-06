@@ -1,9 +1,7 @@
-in_flavor 'stable' do
-    orogen_package 'tutorials/orogen/tut_follower'
-    orogen_package 'tutorials/orogen/tut_brownian'
-    orogen_package 'tutorials/orogen/tut_deployment'
-    orogen_package 'tutorials/orogen/rock_tutorial'
-    orogen_package 'tutorials/orogen/tut_sensor'
-    orogen_package 'tutorials/orogen/message_producer'
-    orogen_package 'tutorials/orogen/message_consumer'
-end
+orogen_package 'tutorials/orogen/tut_follower'
+orogen_package 'tutorials/orogen/tut_brownian'
+orogen_package 'tutorials/orogen/tut_deployment'
+orogen_package 'tutorials/orogen/rock_tutorial'
+orogen_package 'tutorials/orogen/tut_sensor'
+orogen_package 'tutorials/orogen/message_producer'
+orogen_package 'tutorials/orogen/message_consumer'
