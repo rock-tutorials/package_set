@@ -12,6 +12,10 @@ version_control:
         github: rock-tutorials/tutorials-orogen-$PACKAGE_BASENAME
         branch: $ROCK_FLAVOR
 
-    - bundles/.*:
-        gitorious: rock-bundles/$PACKAGE_BASENAME
+    - bundles/tutorials:
+        github: rock-tutorials/bundles-$PACKAGE_BASENAME
+        branch: $ROCK_FLAVOR
+
+    - bundles/tutorials_scripts:
+        github: rock-tutorials/bundles-$PACKAGE_BASENAME
         branch: $ROCK_FLAVOR
