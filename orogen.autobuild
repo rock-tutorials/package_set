@@ -1,4 +1,4 @@
-in_flavor 'stable' do
+in_flavor 'stable', 'master' do
     orogen_package 'tutorials/orogen/tut_follower'
     orogen_package 'tutorials/orogen/tut_brownian'
     orogen_package 'tutorials/orogen/tut_deployment'
